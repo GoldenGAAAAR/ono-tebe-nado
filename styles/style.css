@@ -1,7 +1,6 @@
 /* место для вашего кода */
 /* --- шапка --- */
 .content-section {
-    border: 1px solid red;
     box-sizing: border-box;
     width: 1340px;
     margin-left: 50px;
@@ -64,7 +63,7 @@
 .overlay {
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0, 0.5);
+    background: rgba(0,0,0, 0.6);
     color: white;
     text-transform: uppercase;
     display: grid;
@@ -142,17 +141,13 @@
     font-size: 40px;
     text-transform: uppercase;
     padding-left: 40px;
-    padding-bottom: 24px;
+    margin-bottom: 25px;
 }
 
 .lots__card-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 20px;
+    display: flex;
+    gap: 20px;
     list-style-type: none;
-}
-
-.card-link {
 }
 
 .card {
@@ -160,26 +155,55 @@
     width: 100%;
     position: relative;
     z-index: 0;
+    display: flex;
+    
 }
 .card__title {
-    font-size: 20px;
+    text-align: left;
+    font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: underline;
     position: absolute;
+    color: white;
+    z-index: 2;
+    padding-left: 40px;
+    padding-top: 52px;
+
 }
 
 .card__text {
     position: absolute;
+    color: white;
+    left: 42px;
+    font-size: 20px;
+    z-index: 2;
+    text-align: left;
+    align-self: flex-end;
+    margin-bottom: 52px;
+    
 }
+
 .overlay__temporary {
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0, 0.5);
+    background: rgba(0,0,0, 0.6);
     position: absolute;
     z-index: 1;
-
 }
+
+.lots__look-more-link {
+    font-size: 20px;
+    text-decoration: underline;
+    align-self: end;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.no_wrap {
+    white-space: nowrap;
+}
+
 /* --- about --- */
 
 .about {
