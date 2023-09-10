@@ -4,8 +4,9 @@
     box-sizing: border-box;
     width: 1340px;
     margin-left: 50px;
-    margin-right: 50px; 
+    margin-right: 50px;
 }
+
 .header {
     height: 109px;
     margin-top: 92px;
@@ -19,10 +20,10 @@
 .header__links-list {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr; 
+    grid-template-columns: 1fr 2fr 2fr;
     grid-column-gap: 16px;
     list-style-type: circle;
-    font-size: 18px;  
+    font-size: 18px;
 }
 
 .header__links-list-item {
@@ -32,8 +33,10 @@
 
 .header__logo {
     max-height: 100%;
-    display: flex;
-    padding-bottom: 4px;    
+    height: 108px;
+    width: 148px;
+    display: block;
+    margin-left: 150px
 }
 
 .address {
@@ -115,7 +118,7 @@
     gap: 78px;
 }
 
-.cover__description-text{
+.cover__description-text {
     font-size: 22px;
     font-weight: lighter;
     word-spacing: 18px;
