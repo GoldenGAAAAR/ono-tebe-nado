@@ -39,6 +39,10 @@
     margin-left: 150px
 }
 
+.header__logo-image {
+    height: 108px;
+}
+
 .address {
     display: grid;
     grid-template-rows: 1fr 1fr 2fr;
@@ -67,12 +71,15 @@
     height: 100%;
     width: 100%;
     background: rgba(0,0,0, 0.6);
+    position: absolute;
+    z-index: 1;   
+}
+
+.cover__structure {
     color: white;
     text-transform: uppercase;
     display: grid;
-    grid-template-rows: 3fr 1fr;
-
-    
+    grid-template-rows: 3fr 1fr; 
 }
 
 .cover__title {
@@ -185,14 +192,6 @@
     align-self: flex-end;
     margin-bottom: 52px;
     
-}
-
-.overlay__temporary {
-    height: 100%;
-    width: 100%;
-    background: rgba(0,0,0, 0.6);
-    position: absolute;
-    z-index: 1;
 }
 
 .lots__look-more-link {
