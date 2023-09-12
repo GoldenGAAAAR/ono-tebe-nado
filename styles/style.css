@@ -41,7 +41,7 @@ body {
     font-size: 18px;
 }
 
-.header__links-list-item {
+.header__link_active {
     border-bottom: 1px solid black;
     height: 5px;
 }
@@ -89,7 +89,7 @@ body {
     color: white;
     text-transform: uppercase;
     display: grid;
-    position: relative; 
+    position: relative;
     grid-template-rows: 3fr 1fr;
     grid-row-gap: 80px;
     z-index: 2;
@@ -169,7 +169,7 @@ body {
     display: grid;
 }
 
-.lots_heading {
+.lots__heading {
     font-size: 40px;
     text-transform: uppercase;
     padding-left: 40px;
@@ -177,26 +177,49 @@ body {
 }
 
 .lots__card-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     list-style-type: none;
+}
+
+.lots__card-list-item{
+    min-width: 430px;
+    min-height: 450px;
 }
 
 .card {
     height: 100%;
     width: 100%;
     position: relative;
-    z-index: -2;
+    z-index: 2;
     display: flex;
-    
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
+    background-size: 100%;
+}
+
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+    background-size: 100%;
+}
+
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+    background-size: 100%;
+}
+
+
 .card__title {
     text-align: left;
     font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: underline;
-    position: absolute;
     color: white;
     z-index: 2;
     padding-left: 40px;
@@ -205,15 +228,12 @@ body {
 }
 
 .card__text {
-    position: absolute;
+    display: flex;
     color: white;
-    left: 42px;
     font-size: 20px;
+    padding-left: 40px;
     z-index: 2;
-    text-align: left;
-    align-self: flex-end;
-    margin-bottom: 52px;
-    
+    padding-bottom: 50px;
 }
 
 .lots__look-more-link {
@@ -241,7 +261,7 @@ body {
 
 .about__column {
     display: grid;
-    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
 }
 
 .about__logo-image {
@@ -265,20 +285,24 @@ body {
 }
 
 .about__title {
-    display: flex;
     font-size: 40px;
     text-transform: uppercase;
     justify-content: flex-start;
     align-items: center;
     margin-left: 5px;
+    margin-top: 95px;
+    margin-bottom: -10px
 }
 
 .about__text {
     display: flex;
+    flex-direction: column;
+    row-gap: 30px;
     font-size: 20px;
     justify-content: flex-start;
     align-items: flex-start;
     margin-left: 5px;
+    margin-bottom: -10px;
 
 }
 
@@ -288,7 +312,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 180px;
+    margin-top: 195px;
     margin-bottom: 90px;
 }
 
